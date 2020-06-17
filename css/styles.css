@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+:root {
+    --cream-color: #f6f5f2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Default Properties */
+body {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 9em;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.custom-section {
+    padding: 50px 220px 50px 350px;
+}
+
+.cream-section {
+    background-color: var(--cream-color);
+}
+
+.warn {
+    color: #cd1616;
+    font-size: 0.9em;
+}
+
+footer {
+    padding: 50px;
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.footer-flex {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.footer-flex ul {
+    list-style: none;
+}
+
+.footer-flex li a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 479px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .footer-flex {
+        display: inline;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 5em;
+    }
+    
+    p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .custom-section {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    
+    h1 {
+        font-size: 8em;
+    }
+
+}
