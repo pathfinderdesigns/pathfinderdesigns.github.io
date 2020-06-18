@@ -1,0 +1,28 @@
+/** Scroll Animations **/
+[data-scroll] {
+    transition: all 2s;
+  }
+  
+  [data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  [data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  
+  [data-scroll1] {
+    transition: all 2s;
+  }
+  
+  [data-scroll1="in"] {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  
+  [data-scroll1="out"] {
+    opacity: 0;
+    transform: translateZ(-150px);
+  }

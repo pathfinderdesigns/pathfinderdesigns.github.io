@@ -30,13 +30,6 @@ nav {
     
 }
 
-.hero-landing {
-    height: 100vh;
-    background: #123 url(//unsplash.it/900);
-    background-size: cover;
-    background-blend-mode: multiply;
-}
-
 .nav-up {
     transition: top 0.5s;
     top: -100px
@@ -53,7 +46,7 @@ nav {
 
 .nav-links {
     display: flex;
-    width: 35%;
+    width: 55%;
     justify-content: space-around;
 }
 
@@ -78,7 +71,7 @@ nav {
 
     .nav-black {
         background-color: black;
-        transition: right 0.5s ease-in;
+        transition: all 0.5s ease-in;
     }
 
     .nav-links {
@@ -91,7 +84,7 @@ nav {
         align-items: center;
         width: var(--nav-col-width);
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        
     }
 
     .nav-links li {
@@ -142,6 +135,7 @@ nav {
 
 .nav-active {
     transform: translateX(0%);
+    transition: transform 0.5s ease-in;
 }
 
 /*Animation*/
