@@ -1,91 +1,156 @@
-.site-logo {
-    width: 40px;
-    filter: invert(100%);
+:root {
+    --nav-text: white;
+    --nav-bg: transparent;
+    --nav-bg-scrolled: black;
+    --nav-col-width: 100%;
+    --nav-height: 10vh;
+    --nav-collapsed-height: 90vh; /*Subtract this 100 from --nav-height in order to show logo*/
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: var(--nav-height);
+    background-color: var(--nav-bg);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.6s ease-in;
+}
+
+.nav-normal {
+    background-color: var(--nav-bg);
+    
+}
+
+.nav-scrolled {
+    background-color: var(--nav-bg-scrolled);
+    min-height: 11vh;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.hero-landing {
+    height: 100vh;
+    background: #123 url(//unsplash.it/900);
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .nav-up {
     transition: top 0.5s;
     top: -100px
-  }
-  
-  .nav-down {
-    transition: top 0.5s;
-  }
-  
-  header {
-    --text: #f4f4f4;
-    --text-inverse: #333;
-    --background: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 3em;
-    transition: background 250ms ease-in;
-    background: var(--background);
-    color: var(--text);
-  }
-  
-  .nav__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav__link {
-    --spacing: 1em;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    padding: calc(var(--spacing) / 2) var(--spacing);
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-  }
-  
-  .nav__link:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: var(--spacing);
-    right: var(--spacing);
-    height: 2px;
-    background: currentColor;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    transition: -webkit-transform 150ms ease-in-out;
-    transition: transform 150ms ease-in-out;
-    transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
-  }
-  
-  .nav__link:hover::after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  
-  .nav-scrolled {
-    --text: #333;
-    --text-inverse: #f4f4f4;
-    --background: #f4f4f4;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-  }
-/* Navigation Bar end */
+}
 
-/* Hero Landing Page */
-.home-intro {
-    padding: 35vh 0;
-    background: #123 url("../assets/images/background/bg1.jpg");
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* background-color:var(--main-color); */
-    background-size: cover;
-    color: white;  
-    text-align: center;
-    height: 100vh;
+.nav-down {
+    transition: top 0.5s;
+}
+
+.logo {
+    width: 40px;
+    
+}
+
+.nav-links {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--nav-text);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-black {
+        background-color: black;
+        transition: right 0.5s ease-in;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: var(--nav-collapsed-height);
+        top: 10vh;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        width: var(--nav-col-width);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    /*Hamburguer Menu*/
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
+      
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        display: block;
+        background: white;
+        height: 3px;
+        width: 1.75em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+    }
+    
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
+    
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+    
+    .open .hamburger {
+        transform: rotate(45deg);
+    }
+    
+    .open .hamburger::before {
+        opacity: 0;
+    }
+    
+    .open .hamburger::after {
+        transform: translateY(-3px) rotate(-90deg);
+    }
+    /*End Hamburguer Menu*/
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+/*Animation*/
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    } to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }

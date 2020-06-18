@@ -1,39 +1,29 @@
-const header = document.querySelector("header");
-const sectionOne = document.querySelector(".home-intro");
-const siteLogo = document.querySelector(".site-logo");
+const navSlide = () => {
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+    const body = document.querySelector('nav');
+    const menuToggle = document.querySelector('.menu-toggle');
+    // Toggle Nav
+    menuToggle.addEventListener('click', ()  => {
+        nav.classList.toggle('nav-active');
+        body.classList.toggle('nav-black');
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if(link.style.animation) {
+                link.style.animation = '';
+            } else {
+                // Automatic propper delay
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 8 + 0.5}s`;
+            }
+        });
 
-const sectionOneOptions = {
-  rootMargin: "-100px 0px 0px 0px"
-};
+        //Transform to cross animation
+        menuToggle.classList.toggle('open');
+    });
+}
 
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      header.classList.add("nav-scrolled");
-      siteLogo.classList.add("site-logo--scrolled");
-    } else {
-      header.classList.remove("nav-scrolled");
-      siteLogo.classList.remove("site-logo--scrolled");
-    }
-  });
-},
-sectionOneOptions);
+const app = () => {
+    navSlide();
+}
 
-sectionOneObserver.observe(sectionOne);
-
-
-/* 
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-
-  // 20 is an arbitrary number here, just to make you think if you need the prevScrollpos variable:
-  if (currentScrollPos > 20) {
-    // I am using 'display' instead of 'top':
-    document.getElementById("head").style.display = "none";
-  } else {
-    document.getElementById("head").style.display = "initial";
-  }
-} */
+app();
