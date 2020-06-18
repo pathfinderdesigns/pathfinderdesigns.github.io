@@ -172,7 +172,7 @@ footer {
     .footer-flex {
         font-size: 14px;
         display: flex;
-        
+        justify-content: space-around; 
         padding-bottom: 30px;
     }
 
@@ -191,8 +191,7 @@ footer {
         font-size: 1.0em;
     }
 
-    .social-flex {
-        
+    .social-flex { 
         justify-content: space-around;
     }
 }
@@ -213,6 +212,10 @@ footer {
     .social-flex {
         justify-content: space-between;
         width: 70%;
+    }
+
+    .social-icon {
+        font-size: 1.5em;
     }
 }
 
