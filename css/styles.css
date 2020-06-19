@@ -36,8 +36,8 @@ p {
     height: 100vh;
     /** background-image: #222 url("../assets/background/bg.jpg"); */
     background-size: cover;
-    /*background-blend-mode: overlay;
-    background-position: center;*/
+    /*background-blend-mode: overlay;*/
+    background-position: center;
 
     /***/
     background-image: -webkit-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../assets/background/bg.jpg");
@@ -68,6 +68,86 @@ p {
 
 .custom-section {
     padding: 50px 20px;
+}
+
+.section-body {
+    padding: 20px 20px;
+    padding-bottom: 50px;
+}
+
+
+.gallery-see-more {
+    text-align: center;
+    align-items: center;
+}
+
+.see-more {
+    background-color: black;
+    border: none;
+    padding: 20px 30px;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: white;
+}
+
+.see-more:hover {
+    transition: all 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.portfolio-work {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    margin: 20px;
+}
+
+.portfolio-work:first-child {
+    margin-left: 0px;
+}
+
+.portfolio-work p {
+    position: relative;
+    top: -300px;
+    
+    margin: 10px 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.3em;
+}
+
+.portfolio-work:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.portfolio-work img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    filter: saturate(0%);
+    
+}
+
+.portfolio-work img:hover {
+    transition: all 0.5s ease-in-out;
+    filter: saturate(100%);
 }
 
 .cream-section {
@@ -237,6 +317,10 @@ footer {
 
     .social-icon {
         font-size: 1.5em;
+    }
+
+    .gallery {
+        justify-content: start;
     }
 }
 
