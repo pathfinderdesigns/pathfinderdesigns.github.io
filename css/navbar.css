@@ -3,8 +3,8 @@
     --nav-bg: transparent;
     --nav-bg-scrolled: black;
     --nav-col-width: 100%;
-    --nav-height: 10vh;
-    --nav-collapsed-height: 90vh; /*Subtract this 100 from --nav-height in order to show logo*/
+    --nav-height: 12vh;
+    --nav-collapsed-height: 88vh; /*Subtract this 100 from --nav-height in order to show logo*/
 }
 nav {
     display: flex;
@@ -25,7 +25,7 @@ nav {
 
 .nav-scrolled {
     background-color: var(--nav-bg-scrolled);
-    min-height: 11vh;
+    min-height: 10vh;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     
 }
@@ -41,7 +41,7 @@ nav {
 
 .logo {
     width: 40px;
-    
+    cursor: pointer;
 }
 
 .nav-links {
@@ -58,6 +58,7 @@ nav {
     color: var(--nav-text);
     font-size: 16px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .menu-toggle {

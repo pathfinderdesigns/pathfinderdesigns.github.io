@@ -39,7 +39,7 @@ p {
     background-blend-mode: overlay;
     background-position: center;
     
-    padding: 40vh 0;
+    padding: 30vh 0;
     color: white;
     text-align: center;
 }
@@ -71,8 +71,10 @@ p {
 .social-icon {
     cursor: pointer;
     margin-right: 70px;
-    
-    
+}
+
+.social-icon a {
+    color: black;
 }
 
 .social-icon:last-child {
@@ -168,7 +170,6 @@ footer {
         font-size: 0.9em;
     }
 
-
     .footer-flex {
         font-size: 14px;
         display: flex;
@@ -190,7 +191,9 @@ footer {
     p {
         font-size: 1.0em;
     }
-
+    .hero-landing {
+        padding: 35vh 0;
+    }
     .social-flex { 
         justify-content: space-around;
     }

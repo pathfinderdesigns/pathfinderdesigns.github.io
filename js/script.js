@@ -15,10 +15,28 @@ const navSlide = () => {
                 // Automatic propper delay
             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 8 + 0.5}s`;
             }
+
         });
 
         //Transform to cross animation
-        menuToggle.classList.toggle('open');
+        menuToggle.classList.toggle('open');   
+
+    });
+
+    nav.addEventListener('click', () => {
+        nav.classList.remove('nav-active');
+        menuToggle.classList.remove('open');
+        body.classList.remove('nav-black');
+
+        navLinks.forEach((link, index) => {
+            if(link.style.animation) {
+                link.style.animation = '';
+            } else {
+                // Automatic propper delay
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 8 + 0.5}s`;
+            }
+
+        });
     });
 }
 
