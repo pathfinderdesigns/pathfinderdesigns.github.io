@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    scroll-behavior: smooth;
 }
 
 /* Default Properties */
@@ -34,10 +34,18 @@ p {
 
 .hero-landing {
     height: 100vh;
-    background: #222 url("../assets/background/bg.jpg");
+    /** background-image: #222 url("../assets/background/bg.jpg"); */
     background-size: cover;
-    background-blend-mode: overlay;
-    background-position: center;
+    /*background-blend-mode: overlay;
+    background-position: center;*/
+
+    /***/
+    background-image: -webkit-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../assets/background/bg.jpg");
+    background-image:  -moz-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../assets/background/bg.jpg");
+    background-image:  -o-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../assets/background/bg.jpg");
+    background-image:  -ms-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../assets/background/bg.jpg");
+    background-image:  linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../assets/background/bg.jpg");
+    /***/
     
     padding: 30vh 0;
     color: white;
@@ -46,6 +54,16 @@ p {
 
 .hero-landing p {
     font-size: 1rem;
+}
+
+.black-section {
+    background-color: black;
+    color: white;
+}
+
+.blue-section {
+    background-color: #355f9e;;
+    color: white;
 }
 
 .custom-section {
@@ -94,7 +112,7 @@ p {
 }
 
 .warn {
-    color: #cd1616;
+    color: white;
     font-size: 0.9em;
 }
 
