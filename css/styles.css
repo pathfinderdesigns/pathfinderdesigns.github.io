@@ -321,6 +321,10 @@ footer {
         
     }
 
+    .gallery-see-more {
+        text-align: left;
+    }
+
     .portfolio-work:first-child {
         margin-left: 0px;
     }

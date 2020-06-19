@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <title>Pathfinder Designs</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/forms.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/a6255f3766.js" crossorigin="anonymous"></script>
@@ -65,12 +67,6 @@
         </div>
     </section>
 
-    <div class="section-body cream-section">
-        
-        
-
-    </div>
-
     <section class="custom-section" id="social">
         <h1>Caminhar é com amigos.</h1>
         <p>Fique a par de todas as novidades ou entre em contacto connosco. Teremos todo o prazer em ajudar.</p>
@@ -85,7 +81,14 @@
     <section class="custom-section blue-section" id="contact">
         <h1>Pronto para caminhar connosco?</h1>
         <p>Interessado? Envie-nos uma mensagem e iremos responder assim que possível!</p>
-        <p class="warn">Os campos marcados com (*) são obrigatórios.</p>
+        <form action="https://formspree.io/xpzylldp" method="POST">
+            <input type="text" name="name" class="name" placeholder="Nome (*)">
+            <input type="email" name="_replyto" class="name" placeholder="Email (*)">
+            <textarea name="message" class="message" placeholder="Mensagem (*)"></textarea>
+            <p class="warn">Os campos marcados com (*) são obrigatórios.</p>
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+        
     </section>
 
     <footer>
