@@ -66,6 +66,11 @@ p {
     color: white;
 }
 
+.section-details-white {
+    background-image: url(../assets/icons/bg-details.svg);
+    background-repeat: no-repeat;
+}
+
 .custom-section {
     padding: 50px 20px;
 }
