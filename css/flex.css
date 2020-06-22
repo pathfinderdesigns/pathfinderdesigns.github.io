@@ -12,6 +12,7 @@
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
+    text-align: center;
 }
 
 
@@ -27,6 +28,11 @@
 .img img {
     height: 170px;
     width: 100%;
+}
+
+.img-portfolio img {
+    height: 250px;
+    width: 250px;
 }
 
 .description {
