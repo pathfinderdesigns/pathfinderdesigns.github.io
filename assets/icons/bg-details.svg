@@ -12,7 +12,7 @@
 	<circle class="st0" cx="78.2" cy="55" r="24.7"/>
 </g>
 <g>
-	<rect x="3.3" y="0" class="st0" width="0.5" height="8.6"/>
+	<rect x="3.3" class="st0" width="0.5" height="8.6"/>
 </g>
 <g>
 	<circle class="st0" cx="24.4" cy="19" r="2.5"/>
@@ -23,7 +23,5 @@
 <g>
 	<circle class="st0" cx="66.1" cy="12.2" r="0.4"/>
 </g>
-<polygon class="st0" points="66.1,13.9 64.5,16.6 67.7,16.6 "/>
-<rect x="65.3" y="8.3" class="st0" width="1.6" height="1.6"/>
 <rect x="8.6" y="8.2" class="st0" width="3.7" height="3.7"/>
 </svg>
