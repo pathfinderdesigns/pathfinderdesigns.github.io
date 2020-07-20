@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder Designs - Portfolio</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <!-- Delete Later -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!--  -->
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-storage.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        
+        <a href="../">
+            <img src="../assets/images/logo/logo.svg" alt="Pathfinder" class="logo"/>
+        </a>
+        
+        <ul class="nav-links">
+        
+            <li><a href="../">Inicio</a></li>
+            <!-- <li><a href="#brief">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#social">Social</a></li> -->
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#contact">Contactos</a></li>
+            
+        </ul>
+        <!-- <div class="lang">
+            <p><a href="en/index.html">EN</a> | <a href="#">PT</a></p>
+        </div> -->
+
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-landing">
+            <a href="#brief"><img class="down-arrow" src="../assets/images/icons/down.svg"></a>
+            <p class="hero-paragraph" id="startChange">pathfinderdesigns.</p>
+            <h1 class="hero-heading">
+                <span class="hero-h1">página</span>
+                <span class="hero-h1">em</span>
+                <span class="hero-h1">construção.</span>
+            </h1>
+        </section>
+        <div class="intro-image-wrapper anim-up-wrapper">
+            <div class="brief-image anim-up">
+            </div>
+        </div>
+    
+        <section class="brief anim-up-wrapper" id="brief">
+            <h1 class="brief-heading anim-up">
+                Esta página encontra-se em contrução. Por favor, volte mais tarde.
+            </h1>
+        </section>
+    
+        <section class="contact anim-up-wrapper" id="contact">
+    
+            <h1 class="anim-up">Contacte-nos!</h1>
+            <p class="anim-up">Entre em contacto connosco e responderemos o mais rapidamente possível.</p>
+    
+            <form class="email-form anim-up" id="add-email-form">
+                <div class="form-group" id="add-email-form">
+                    <label>Nome</label>
+                    <input id="email-name" type="text" name="name" class="name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input id="email-mail" type="text" name="mail" class="name">
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea id="email-message" type="text" name="message" class="message"></textarea>
+                </div>
+                <button id="new-email" class="anim-up">Enviar</button>
+            </form>
+    
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-logo">
+                <a href="../"><img src="../assets/images/logo/logo.svg" alt=""></a>
+            </div>
+            <div class="navigation">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="../#brief">Sobre</a></li>
+                    <li><a href="../#services">Serviços</a></li>
+                    <li><a href="../#social">Social</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/pathfinderdesigns">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/pathfinderdesigns">Instagram</a></li>
+                    <li><a href="https://m.me/pathfinderdesigns">Messenger</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2020 Pathfinder Designs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCpUnp6Q3J4ASWAb0eSLOVZqDRyYsa6lT8",
+            authDomain: "pathfinder-designs.firebaseapp.com",
+            databaseURL: "https://pathfinder-designs.firebaseio.com",
+            projectId: "pathfinder-designs",
+            storageBucket: "pathfinder-designs.appspot.com",
+            messagingSenderId: "241203238141",
+            appId: "1:241203238141:web:768ef1cd0bf183da005a94"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    
+    </script>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>

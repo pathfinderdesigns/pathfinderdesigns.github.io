@@ -265,13 +265,42 @@ const changeNavSection = () => {
  });
 }
 
+// const barbaJS = () => {
+    
+
+//   barba.init({
+    
+//     sync: true,
+
+//     transitions: [{
+//       name: 'opacity-transition',
+//       leave(data) {
+//         $(window).scrollTop(0);
+//         //window.location.href = window.location.href.split( '#' )[0];
+//         return gsap.to(data.current.container, {
+//           opacity: 0
+//         });
+//       },
+//       enter(data) {
+//         $(window).scrollTop(0);
+//         //window.location.href = window.location.href.split( '#' )[0];
+//         return gsap.from(data.next.container, {
+//           opacity: 0
+//         });
+//       }
+//     }]
+//   });
+// }
+
 /// Add functions to be initialized
+
 const app = () => {
   animations();
   firebase();
   hideNavBarScroll();
   navSlide();
   changeNavSection();
+  //barbaJS();
   //sectionObserver();
 }
 

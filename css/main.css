@@ -25,6 +25,11 @@ button:hover {
   color: white;
 }
 
+button a {
+  color: white;
+  text-decoration: none;
+}
+
 section {
   padding: 10vh 10vw;
   color: #323232;

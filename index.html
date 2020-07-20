@@ -16,6 +16,7 @@
     <!-- Delete Later -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <!--  -->
+    <script src="https://unpkg.com/@barba/core"></script>
 
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
@@ -29,7 +30,9 @@
     <!-- Navbar -->
     <nav id="navbar">
         
-        <img src="assets/images/logo/logo.svg" alt="Pathfinder" class="logo">
+        <a href="#">
+            <img src="assets/images/logo/logo.svg" alt="Pathfinder" class="logo"/>
+        </a>
 
         <ul class="nav-links">
         
@@ -37,7 +40,7 @@
             <li><a href="#brief">Sobre</a></li>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#social">Social</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="portfolio/">Portfolio</a></li>
             <li><a href="#contact">Contactos</a></li>
             
         </ul>
@@ -50,139 +53,144 @@
         </div>
     </nav>
 
-    <section class="hero-landing">
-        <a href="#brief"><img class="down-arrow" src="assets/images/icons/down.svg"></a>
-        <p class="hero-paragraph" id="startChange">pathfinderdesigns.</p>
-        <h1 class="hero-heading">
-            <span class="hero-h1">find</span>
-            <span class="hero-h1">your</span>
-            <span class="hero-h1">path.</span>
-        </h1>
-    </section>
-    <div class="intro-image-wrapper anim-up-wrapper">
-        <div class="brief-image anim-up">
-        </div>
-    </div>
-
-    <section class="brief anim-up-wrapper" id="brief">
-        <h1 class="brief-heading anim-up">Elevamos o seu projeto ao próximo nível com uma melhor experiência digital.
-        </h1>
-    </section>
-
-    <!-- <div class="introduction-image">
-
-    </div> -->
-    <section class="introduction anim-up-wrapper">
-        <div class="introduction-text">
-            <h1 class="anim-up">Destaque-se.</h1>
-            <p class="anim-up">A sua marca, grande ou pequena, tem um superpoder. Tudo o que ela faz tem o potencial de criar boas experiências e sensações na mente dos seus clientes. Todas as ações, por mais pequenas que sejam, têm impacto nessa percepção. Assim, é importante que tais ações estejam cobertas com uma boa idêntidade. A mesma aparência, a mesma tonalidade e o mesmo tom de voz. Uma boa identidade, tem o poder de tornar a sua marca, algo especial aos olhos da sua audiência. Vamos criá-la juntos?</p>
-        </div>
-        
-        <!-- https://www.pexels.com/pt-br/foto/acao-adulto-agua-alegre-1122868/ -->
-
-    </section>
-
-    <section class="dare-section anim-wbw-wrapper">
-        <h1>
-            <span class="anim-wbw">Torne</span>
-            <span class="anim-wbw">ideias</span>
-            <span class="anim-wbw">realidade.</span>
-        </h1>
-        
-    </section>
-    <div class="intro-image-wrapper anim-up-wrapper">
-        <div class="introduction-image anim-up"></div>
-    </div>
-    <section class="services anim-up-wrapper" id="services">
-        <div class="service-text"> 
-            <h1 class="anim-up">O que fazemos?</h1>
-            <p class="anim-up">Acreditamos que ter uma identidade forte e reconhecível é a chave para um negócio com
-                sucesso. Assim, ajudamos pessoas e empresas a tomar decisões corretas, um passo de cada vez.</p>
-        </div><br>
-        <div class="services-flex">
-            <div class="service-card">
-                <div class="service-card-img anim-up">
-                    <img src="assets/images/illustrations/webdev.svg" alt="">
-                </div>
-                <div class="service-card-text">
-                    <h2 class="anim-up">Websites e apps.</h2>
-                    <p class="anim-up">Quer mostrar o potêncial da sua empresa ou criar um portfólio pessoal? Faremos as
-                        suas ideias, uma realidade. Desenhamos e criamos websites e apps adaptáveis a qualquer tipo de
-                        dispositivos.</p>
-                </div>
-                
+    <main>
+        <section class="hero-landing">
+            <a href="#brief"><img class="down-arrow" src="assets/images/icons/down.svg"></a>
+            <p class="hero-paragraph" id="startChange">pathfinderdesigns.</p>
+            <h1 class="hero-heading">
+                <span class="hero-h1">find</span>
+                <span class="hero-h1">your</span>
+                <span class="hero-h1">path.</span>
+            </h1>
+        </section>
+        <div class="intro-image-wrapper anim-up-wrapper">
+            <div class="brief-image anim-up">
             </div>
-    
+        </div>
+
+        <section class="brief anim-up-wrapper" id="brief">
+            <h1 class="brief-heading anim-up">Elevamos o seu projeto ao próximo nível com uma melhor experiência digital.
+            </h1>
+        </section>
+
+        <!-- <div class="introduction-image">
+
+        </div> -->
+        <section class="introduction anim-up-wrapper">
+            <div class="introduction-text">
+                <h1 class="anim-up">Destaque-se.</h1>
+                <p class="anim-up">A sua marca, grande ou pequena, tem um superpoder. Tudo o que ela faz tem o potencial de criar boas experiências e sensações na mente dos seus clientes. Todas as ações, por mais pequenas que sejam, têm impacto nessa percepção. Assim, é importante que tais ações estejam cobertas com uma boa idêntidade. A mesma aparência, a mesma tonalidade e o mesmo tom de voz. Uma boa identidade, tem o poder de tornar a sua marca, algo especial aos olhos da sua audiência. Vamos criá-la juntos?</p>
+            </div>
             
-            <div class="service-card">
-                <div class="service-card-img anim-up">
-                    <img src="assets/images/illustrations/graphicdesign.svg" alt="">
-                </div>
-                <div class="service-card-text">
-                    <h2 class="anim-up">Design Gráfico.</h2>
-                    <p class="anim-up">Acreditamos que ter uma identidade forte e reconhecível é a chave para um negócio com
-                        sucesso. Assim, ajudamos pessoas e empresas a tomar decisões corretas, um passo de cada vez.</p>
-                </div>
-            </div>
-    
-            <div class="service-card">
-                <div class="service-card-img anim-up">
-                    <img src="assets/images/illustrations/uiux.svg" alt="">
-                </div>
-                <div class="service-card-text">
-                    <h2 class="anim-up">UI/UX Design</h2>
-                    <p class="anim-up">Encontramos o melhor design para o vosso website ou aplicação móvel. A interção com o utilizador é sempre prioridade, e é com esse pensamento que desenhamos todos os nossos projetos.</p>
-                </div>
-            </div>
+            <!-- https://www.pexels.com/pt-br/foto/acao-adulto-agua-alegre-1122868/ -->
+
+        </section>
+
+        <section class="dare-section anim-wbw-wrapper">
+            <h1>
+                <span class="anim-wbw">Torne</span>
+                <span class="anim-wbw">ideias</span>
+                <span class="anim-wbw">realidade.</span>
+            </h1>
+            
+        </section>
+        <div class="intro-image-wrapper anim-up-wrapper">
+            <div class="introduction-image anim-up"></div>
         </div>
+        <section class="services anim-up-wrapper" id="services">
+            <div class="service-text"> 
+                <h1 class="anim-up">O que fazemos?</h1>
+                <p class="anim-up">Acreditamos que ter uma identidade forte e reconhecível é a chave para um negócio com
+                    sucesso. Assim, ajudamos pessoas e empresas a tomar decisões corretas, um passo de cada vez.</p>
+            </div><br>
+            <div class="services-flex">
+                <div class="service-card">
+                    <div class="service-card-img anim-up">
+                        <img src="assets/images/illustrations/webdev.svg" alt="">
+                    </div>
+                    <div class="service-card-text">
+                        <h2 class="anim-up">Websites e apps.</h2>
+                        <p class="anim-up">Quer mostrar o potêncial da sua empresa ou criar um portfólio pessoal? Faremos as
+                            suas ideias, uma realidade. Desenhamos e criamos websites e apps adaptáveis a qualquer tipo de
+                            dispositivos.</p>
+                    </div>
+                    
+                </div>
         
-
-    </section>
-
-    <section class="social-media anim-up-wrapper" id="social">
-        <h1 class="anim-up">Sigam-nos!</h1>
-        <p class="anim-up">Mantenha-se a par de todas as novidades.</p>
-
-        <div class="social-media-icons anim-up">
-            <a href="https://www.facebook.com/pathfinderdesigns"><img class="social-icon"
-                    src="assets/images/icons/facebook.svg" alt=""></a>
-            <a href="https://www.instagram.com/pathfinderdesigns"><img class="social-icon"
-                    src="assets/images/icons/instagram.svg" alt=""></a>
-            <a href="https://m.me/pathfinderdesigns"><img class="social-icon"
-                    src="assets/images/icons/messenger.svg" alt=""></a>
-            <!-- <a href="https://www.skype.com/rodrigorocha72"><img class="social-icon"
-                    src="assets/images/icons/skype.svg" alt=""></a> -->
-        </div>
-    </section>
-
-    <section class="portfolio anim-up-wrapper" id="portfolio">
-        <h1 class="anim-up">O nosso trabalho.</h1>
-        <p class="anim-up">Veja um pouco do nosso trabalho!</p>
-        <button class="anim-up" href="#">Veja aqui</button>
-    </section>
-
-    <section class="contact anim-up-wrapper" id="contact">
-
-        <h1 class="anim-up">Contacte-nos!</h1>
-        <p class="anim-up">Entre em contacto connosco e responderemos o mais rapidamente possível.</p>
-
-        <form class="email-form anim-up" id="add-email-form">
-            <div class="form-group" id="add-email-form">
-                <label>Nome</label>
-                <input id="email-name" type="text" name="name" class="name">
+                
+                <div class="service-card">
+                    <div class="service-card-img anim-up">
+                        <img src="assets/images/illustrations/graphicdesign.svg" alt="">
+                    </div>
+                    <div class="service-card-text">
+                        <h2 class="anim-up">Design Gráfico.</h2>
+                        <p class="anim-up">Acreditamos que ter uma identidade forte e reconhecível é a chave para um negócio com
+                            sucesso. Assim, ajudamos pessoas e empresas a tomar decisões corretas, um passo de cada vez.</p>
+                    </div>
+                </div>
+        
+                <div class="service-card">
+                    <div class="service-card-img anim-up">
+                        <img src="assets/images/illustrations/uiux.svg" alt="">
+                    </div>
+                    <div class="service-card-text">
+                        <h2 class="anim-up">UI/UX Design</h2>
+                        <p class="anim-up">Encontramos o melhor design para o vosso website ou aplicação móvel. A interção com o utilizador é sempre prioridade, e é com esse pensamento que desenhamos todos os nossos projetos.</p>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input id="email-mail" type="text" name="mail" class="name">
-            </div>
-            <div class="form-group">
-                <label>Mensagem</label>
-                <textarea id="email-message" type="text" name="message" class="message"></textarea>
-            </div>
-            <button id="new-email" class="anim-up">Enviar</button>
-        </form>
+            
 
-    </section>
+        </section>
+
+        <section class="social-media anim-up-wrapper" id="social">
+            <h1 class="anim-up">Sigam-nos!</h1>
+            <p class="anim-up">Mantenha-se a par de todas as novidades.</p>
+
+            <div class="social-media-icons anim-up">
+                <a href="https://www.facebook.com/pathfinderdesigns"><img class="social-icon"
+                        src="assets/images/icons/facebook.svg" alt=""></a>
+                <a href="https://www.instagram.com/pathfinderdesigns"><img class="social-icon"
+                        src="assets/images/icons/instagram.svg" alt=""></a>
+                <a href="https://m.me/pathfinderdesigns"><img class="social-icon"
+                        src="assets/images/icons/messenger.svg" alt=""></a>
+                <!-- <a href="https://www.skype.com/rodrigorocha72"><img class="social-icon"
+                        src="assets/images/icons/skype.svg" alt=""></a> -->
+            </div>
+        </section>
+
+        <section class="portfolio anim-up-wrapper" id="portfolio">
+            <h1 class="anim-up">O nosso trabalho.</h1>
+            <p class="anim-up">Veja um pouco do nosso trabalho!</p>
+            <a href="portfolio/">
+                <button class="anim-up">Veja aqui</button>
+            </a>
+        </section>
+
+        <section class="contact anim-up-wrapper" id="contact">
+
+            <h1 class="anim-up">Contacte-nos!</h1>
+            <p class="anim-up">Entre em contacto connosco e responderemos o mais rapidamente possível.</p>
+
+            <form class="email-form anim-up" id="add-email-form">
+                <div class="form-group" id="add-email-form">
+                    <label>Nome</label>
+                    <input id="email-name" type="text" name="name" class="name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input id="email-mail" type="text" name="mail" class="name">
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea id="email-message" type="text" name="message" class="message"></textarea>
+                </div>
+                <button id="new-email" class="anim-up">Enviar</button>
+            </form>
+
+        </section>
+    </main>
+    
 
     <footer>
         <div class="footer-flex">
@@ -196,7 +204,7 @@
                     <li><a href="#brief">Sobre</a></li>
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#social">Social</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contactos</a></li>
                 </ul>
             </div>
