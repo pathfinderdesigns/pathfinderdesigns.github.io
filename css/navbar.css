@@ -110,7 +110,7 @@ nav {
 
     .nav-links li {
         opacity: 0;
-        margin-left: 60px;
+        padding-left: 10vw;
     }
 
     /*Hamburguer Menu*/
