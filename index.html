@@ -1,157 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Pathfinder Designs - Bem Vindo</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Pathfinder Designs - Bem Vindo!</title>
 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <!-- Delete Later -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!--  -->
+
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-storage.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/a6255f3766.js" crossorigin="anonymous"></script>
-    
 </head>
+
 <body>
-    
+
+
     <!-- Navbar -->
     <nav id="navbar">
         
-        <img src="static/assets/logo/logo.svg" alt="Pathfinder" class="logo">
+        <img src="assets/images/logo/logo.svg" alt="Pathfinder" class="logo">
 
         <ul class="nav-links">
-            <li><a href="#about">Sobre</a></li>
+        
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#brief">Sobre</a></li>
             <li><a href="#services">Serviços</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#social">Social</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contactos</a></li>
             
         </ul>
-        <div class="lang">
+        <!-- <div class="lang">
             <p><a href="en/index.html">EN</a> | <a href="#">PT</a></p>
-        </div>
+        </div> -->
 
         <div class="menu-toggle">
             <div class="hamburger"></div>
-          </div>
+        </div>
     </nav>
 
-    <div class="hero-landing">
-        <h1>Pathfinder Designs</h1>
-        <p>Find Your Path</p>
+    <section class="hero-landing">
+        <a href="#brief"><img class="down-arrow" src="assets/images/icons/down.svg"></a>
+        <p class="hero-paragraph" id="startChange">pathfinderdesigns.</p>
+        <h1 class="hero-heading">
+            <span class="hero-h1">find</span>
+            <span class="hero-h1">your</span>
+            <span class="hero-h1">path.</span>
+        </h1>
+    </section>
+    <div class="intro-image-wrapper anim-up-wrapper">
+        <div class="brief-image anim-up">
+        </div>
     </div>
 
-    <section class="custom-section black-section" id="about">
-        <h1 data-scroll>Encontre o seu caminho.</h1>
-        <p data-scroll>A sua marca, grande ou pequena, tem um superpoder. Tudo o que ela faz tem o potencial de criar boas experiências e sensações na mente dos seus clientes. Como um pequeno grão de areia numa ostra, cada ação positiva pode ser um passo dado até se tornar uma linda perola. No entanto, para a sua marca se tornar nessa perola, todas as pequenas ações têm de estar cobertas com uma boa identidade. A mesma aparência, a mesma tonalidade e o mesmo tom de voz. Uma boa identidade, tem o poder de tornar a sua marca, algo especial aos olhos da sua audiência. Vamos criá-la juntos?</p>
+    <section class="brief anim-up-wrapper" id="brief">
+        <h1 class="brief-heading anim-up">Elevamos o seu projeto ao próximo nível com uma melhor experiência digital.
+        </h1>
     </section>
 
-    <section class="custom-section white-section section-details-white" id="services">
-        <h1 data-scroll>Criamos experiências.</h1>
-        <p data-scroll>Acreditamos que ter uma identidade forte e reconhecível é a chave para um negócio com sucesso. Assim, ajudamos pessoas e empresas a tomar decisões corretas, um passo de cada vez.</p>
+    <!-- <div class="introduction-image">
+
+    </div> -->
+    <section class="introduction anim-up-wrapper">
+        <div class="introduction-text">
+            <h1 class="anim-up">Destaque-se.</h1>
+            <p class="anim-up">A sua marca, grande ou pequena, tem um superpoder. Tudo o que ela faz tem o potencial de criar boas experiências e sensações na mente dos seus clientes. Todas as ações, por mais pequenas que sejam, têm impacto nessa percepção. Assim, é importante que tais ações estejam cobertas com uma boa idêntidade. A mesma aparência, a mesma tonalidade e o mesmo tom de voz. Uma boa identidade, tem o poder de tornar a sua marca, algo especial aos olhos da sua audiência. Vamos criá-la juntos?</p>
+        </div>
         
-        <div class="services">
-            <div class="service-1" data-scroll>
-                <div class="img">
-                    <img src="static/assets/icons/graph.svg" alt="graphic-design">
-                </div>
-                <div class="description">
-                    <h2>Design Gráfico.</h2>
-                    <p>Proporcionamos uma nova identidade visual ao seu projeto. Logotipos, flyers, cartões de visita e muito mais. As possíbilidades são infinitas. Do que está à espera?</p>
-                </div>
-            </div>
-            <div class="service-1" data-scroll>
-                <div class="img">
-                    <img src="static/assets/icons/web.svg" alt="ux">
-                </div>
-                <div class="description">
-                    <h2>Websites e apps.</h2>
-                    <p>Quer mostrar o potêncial da sua empresa ou criar um portfólio pessoal? Faremos as suas ideias, uma realidade. Desenhamos e criamos websites e apps adaptáveis a qualquer tipo de dispositivos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+        <!-- https://www.pexels.com/pt-br/foto/acao-adulto-agua-alegre-1122868/ -->
 
-    
-
-    <section class="custom-section cream-section section-details-cream" id="portfolio">
-        <h1 data-scroll>O nosso trabalho.</h1>
-        <p data-scroll>Todo o nosso trabalho é feito com a máxima dedicação e profissionalismo. Não deixamos nada ao acaso. Venha descobrir um pouco do que podemos fazer para si!</p>
-        <br>
-        <p data-scroll>Escolha um dos projetos abaixo para informações mais informações de como foi realizado, ou então veja mais no Instagram!</p>
-        <div class="services" id="about">
-            <div class="service-1" data-scroll>
-                <div class="img-portfolio">
-                    <img src="static/assets/logo/logo-circular.png" alt="pf-designs">
-                </div>
-                <div class="description">
-                    <h2>Pathfinder Designs</h2>
-                    <p>Identidade Visual do nosso projeto. Desde a criação do logotipo, website, rede sociais, etc. Venha descobrir mais!</p>
-                </div>
-            </div>
-        </div>
-        <div class="gallery-see-more" data-scroll>
-            <button class="btn-black">
-                <a href="https://www.instagram.com/pathfinderdesigns">Veja mais</a>
-            </button>
-        </div>
-       
     </section>
 
-    <section class="custom-section white-section section-details-white" id="social">
-        <h1 data-scroll>Caminhar é com amigos.</h1>
-        <p data-scroll>Fique a par de todas as novidades ou entre em contacto connosco. Teremos todo o prazer em ajudar.</p>
-        <div class="social-flex">
-            <div class="social-icon" data-scroll> <a href="https://www.facebook.com/pathfinderdesigns"><i class="fab fa-facebook"></i></a> </div>
-            <div class="social-icon" data-scroll> <a href="https://www.instagram.com/pathfinderdesigns"><i class="fab fa-instagram"></i></a> </div>
-            <div class="social-icon" data-scroll> <a href="#"><i class="fab fa-youtube"></i></a> </div>
+    <section class="dare-section anim-wbw-wrapper">
+        <h1>
+            <span class="anim-wbw">Torne</span>
+            <span class="anim-wbw">ideias</span>
+            <span class="anim-wbw">realidade.</span>
+        </h1>
+        
+    </section>
+    <div class="intro-image-wrapper anim-up-wrapper">
+        <div class="introduction-image anim-up"></div>
+    </div>
+    <section class="services anim-up-wrapper" id="services">
+        <div class="service-text"> 
+            <h1 class="anim-up">O que fazemos?</h1>
+            <p class="anim-up">Acreditamos que ter uma identidade forte e reconhecível é a chave para um negócio com
+                sucesso. Assim, ajudamos pessoas e empresas a tomar decisões corretas, um passo de cada vez.</p>
+        </div><br>
+        <div class="services-flex">
+            <div class="service-card">
+                <div class="service-card-img anim-up">
+                    <img src="assets/images/illustrations/webdev.svg" alt="">
+                </div>
+                <div class="service-card-text">
+                    <h2 class="anim-up">Websites e apps.</h2>
+                    <p class="anim-up">Quer mostrar o potêncial da sua empresa ou criar um portfólio pessoal? Faremos as
+                        suas ideias, uma realidade. Desenhamos e criamos websites e apps adaptáveis a qualquer tipo de
+                        dispositivos.</p>
+                </div>
+                
+            </div>
+    
             
+            <div class="service-card">
+                <div class="service-card-img anim-up">
+                    <img src="assets/images/illustrations/graphicdesign.svg" alt="">
+                </div>
+                <div class="service-card-text">
+                    <h2 class="anim-up">Design Gráfico.</h2>
+                    <p class="anim-up">Acreditamos que ter uma identidade forte e reconhecível é a chave para um negócio com
+                        sucesso. Assim, ajudamos pessoas e empresas a tomar decisões corretas, um passo de cada vez.</p>
+                </div>
+            </div>
+    
+            <div class="service-card">
+                <div class="service-card-img anim-up">
+                    <img src="assets/images/illustrations/uiux.svg" alt="">
+                </div>
+                <div class="service-card-text">
+                    <h2 class="anim-up">UI/UX Design</h2>
+                    <p class="anim-up">Encontramos o melhor design para o vosso website ou aplicação móvel. A interção com o utilizador é sempre prioridade, e é com esse pensamento que desenhamos todos os nossos projetos.</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section class="social-media anim-up-wrapper" id="social">
+        <h1 class="anim-up">Sigam-nos!</h1>
+        <p class="anim-up">Mantenha-se a par de todas as novidades.</p>
+
+        <div class="social-media-icons anim-up">
+            <a href="https://www.facebook.com/pathfinderdesigns"><img class="social-icon"
+                    src="assets/images/icons/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/pathfinderdesigns"><img class="social-icon"
+                    src="assets/images/icons/instagram.svg" alt=""></a>
+            <a href="https://m.me/pathfinderdesigns"><img class="social-icon"
+                    src="assets/images/icons/messenger.svg" alt=""></a>
+            <!-- <a href="https://www.skype.com/rodrigorocha72"><img class="social-icon"
+                    src="assets/images/icons/skype.svg" alt=""></a> -->
         </div>
     </section>
 
-    <section class="custom-section blue-section" id="contact">
-        <h1 data-scroll>Pronto para caminhar connosco?</h1>
-        <p data-scroll>Interessado? Envie-nos uma mensagem e iremos responder assim que possível!</p><br>
-        <form class="email-form" id="add-email-form" data-scroll>
-            <p>Nome (*)</p>
-            <input id="email-name" type="text" name="name" class="name">
-            <p>E-Mail (*)</p>
-            <input id="email-mail" type="text" name="mail" class="name">
-            <p>Mensagem (*)</p>
-            <textarea id="email-message" type="text" name="message" class="message"></textarea>
-            <p class="warn">Os campos marcados com (*) são obrigatórios.</p>
-            <button id="new-email" class="submit btn-white">Enviar</button>
+    <section class="portfolio anim-up-wrapper" id="portfolio">
+        <h1 class="anim-up">O nosso trabalho.</h1>
+        <p class="anim-up">Veja um pouco do nosso trabalho!</p>
+        <button class="anim-up" href="#">Veja aqui</button>
+    </section>
+
+    <section class="contact anim-up-wrapper" id="contact">
+
+        <h1 class="anim-up">Contacte-nos!</h1>
+        <p class="anim-up">Entre em contacto connosco e responderemos o mais rapidamente possível.</p>
+
+        <form class="email-form anim-up" id="add-email-form">
+            <div class="form-group" id="add-email-form">
+                <label>Nome</label>
+                <input id="email-name" type="text" name="name" class="name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input id="email-mail" type="text" name="mail" class="name">
+            </div>
+            <div class="form-group">
+                <label>Mensagem</label>
+                <textarea id="email-message" type="text" name="message" class="message"></textarea>
+            </div>
+            <button id="new-email" class="anim-up">Enviar</button>
         </form>
-        
+
     </section>
 
     <footer>
         <div class="footer-flex">
-            <div class="brand">
-                <img src="static/assets/logo/logo.svg" alt="pthfndr" class="footer-logo">
+            <div class="footer-logo">
+                <a href="#"><img src="assets/images/logo/logo.svg" alt=""></a>
             </div>
-            <div class="footer-nav">
-                <h2>Navegação</h2>
-                <div class="footer-nav-list">
-                    <ul>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#social">Social</a></li>
-                        <li><a href="#contact">Contactos</a></li>
-                    </ul>
-                </div>
+            <div class="navigation">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#brief">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
             </div>
-            <div class="footer-social">
-                <h2>Redes Sociais</h2>
+            <div class="social">
+                <h3>Redes Sociais</h3>
                 <ul>
                     <li><a href="https://www.facebook.com/pathfinderdesigns">Facebook</a></li>
                     <li><a href="https://www.instagram.com/pathfinderdesigns">Instagram</a></li>
-                    <li><a href="#">Youtube</a></li>
+                    <li><a href="https://m.me/pathfinderdesigns">Messenger</a></li>
                 </ul>
             </div>
         </div>
@@ -177,17 +231,10 @@
     
     </script>
 
-    <script src="static/js/script.js"></script>
-    <script src="static/js/hide-nav.js"></script>
-    <script src="static/js/change-nav-on-section.js"></script>
-    <script src="static/js/firebase.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <script src="js/app.js"></script>
 
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    <script>
-      ScrollOut({
-        once: true
-      });
-    </script>
-    
 </body>
+
 </html>
