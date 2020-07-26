@@ -141,6 +141,22 @@ section {
     background-position: center;    
 }
 
+.portfolio-image {
+    height: 60vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url(../assets/images/background/portfolio.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.giveaway-image {
+    height: 60vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url(../assets/images/background/website-giveaway-01.jpg);
+    background-size: cover;
+    background-position: bottom;    
+}
+
 .dare-section {
     padding-bottom: 0;
 }
@@ -234,10 +250,19 @@ section {
     }
 }
 
+.form-input {
+    transition: 0.2s ease;
+
+    &:focus {
+        border-color: $text_color;
+        box-shadow: 0 0 5px $text_color;
+    }
+
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
-
     
 
     input, textarea {
@@ -425,3 +450,4 @@ footer {
 @media screen and (min-width:1920px) {
 
 }
+

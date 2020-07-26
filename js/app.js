@@ -129,18 +129,28 @@ const animations = () => {
 
 // Firebase functions
 const firebase = () => {
+  if(document.querySelector('#add-email-form')==null) {
+    return ;
+  }
   const form = document.querySelector('#add-email-form');
 
   // Add new Email
   form.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Email Sent!\nWait for our response');
+      
       db.collection('emails').add({
           name: form.name.value,
           email: form.mail.value,
           message: form.message.value,
           time: new Date(Date.now())
-      });
+      }).then(() => {
+        alert('Submetido com sucesso!');
+        clearEmailFields();
+        window.location.href = "http://pathfinderdesigns.pt";
+    }).catch(() => {
+        alert('Erro ao submeter. Por favor tente novamente. Se o erro persistir, tente mais tarde, ou contacte-nos.')
+    });
+
       clearEmailFields();
   });
 
